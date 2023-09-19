@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <div class="buttons">
+            <!-- Botão de limpar -->
+            
+            <button onclick="clearDisplay()">AC</button>
+            <button onclick="clearDisplay()">AC</button>
+            <button onclick="clearDisplay()">AC</button>
+
+            <!-- Botões numéricos com operações -->
+            <button onclick="appendToDisplay('÷')">÷</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('x')">x</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('-')">-</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('+')">+</button>
+            
+            
+            <!-- Operações -->
+            
+            <button onclick="appendToDisplay('0')">0</button>
+            
+            
+            <button onclick="appendToDisplay(',')">,</button>
+        
+
+            <!-- Botão de resultado -->
+            <button onclick="calculate()">=</button>
+
+        </div>
+    </div>
+    <script> 
+       // Variável que armazena o visor da calculadora
+        var display = document.getElementById('display');
+        
+        // Função para adicionar um valor ao visor
+        function appendToDisplay(value) {
+            display.value += value;
+        }
+        
+        // Função para calcular o resultado
+        function calculate() {
+            try {
+                display.value = eval(display.value);
+            } catch (error) {
+                display.value = 'Erro';
+            }
+        }
+        
+        // Função para limpar o visor
+        function clearDisplay() {
+            display.value = '';
+        }
+        </script>
+</body>
+</html>
