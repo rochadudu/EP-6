@@ -1,72 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
+    <title>Leis de Newton</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="calculator">
-        <input type="text" id="display" readonly>
-        <div class="buttons">
-            <!-- Botão de limpar -->
-            
-            <button onclick="clearDisplay()">AC</button>
-            <button onclick="clearDisplay()">AC</button>
-            <button onclick="clearDisplay()">AC</button>
-
-            <!-- Botões numéricos com operações -->
-            <button onclick="appendToDisplay('÷')">÷</button>
-            <button onclick="appendToDisplay('7')">7</button>
-            <button onclick="appendToDisplay('8')">8</button>
-            <button onclick="appendToDisplay('9')">9</button>
-            <button onclick="appendToDisplay('x')">x</button>
-            <button onclick="appendToDisplay('4')">4</button>
-            <button onclick="appendToDisplay('5')">5</button>
-            <button onclick="appendToDisplay('6')">6</button>
-            <button onclick="appendToDisplay('-')">-</button>
-            <button onclick="appendToDisplay('1')">1</button>
-            <button onclick="appendToDisplay('2')">2</button>
-            <button onclick="appendToDisplay('3')">3</button>
-            <button onclick="appendToDisplay('+')">+</button>
-            
-            
-            <!-- Operações -->
-            
-            <button onclick="appendToDisplay('0')">0</button>
-            
-            
-            <button onclick="appendToDisplay(',')">,</button>
-        
-
-            <!-- Botão de resultado -->
-            <button onclick="calculate()">=</button>
-
-        </div>
-    </div>
-    <script> 
-       // Variável que armazena o visor da calculadora
-        var display = document.getElementById('display');
-        
-        // Função para adicionar um valor ao visor
-        function appendToDisplay(value) {
-            display.value += value;
-        }
-        
-        // Função para calcular o resultado
-        function calculate() {
-            try {
-                display.value = eval(display.value);
-            } catch (error) {
-                display.value = 'Erro';
-            }
-        }
-        
-        // Função para limpar o visor
-        function clearDisplay() {
-            display.value = '';
-        }
-        </script>
+    <header>
+        <h1>Leis de Newton</h1>
+        <p>Conhecimento Fundamental</p>
+    </header>
+    <main>
+        <!-- Seção de Explicação -->
+        <section id="explanation">
+            <h2>Explicação das Leis de Newton</h2>
+            <p>
+                As Leis de Newton são três princípios fundamentais que descrevem o movimento de objetos. Elas são:
+            </p>
+            <ol>
+                <li>Primeira Lei de Newton: Também chamada de Lei da Inércia.</li>
+                <li>Segunda Lei de Newton: Relaciona força, massa e aceleração.</li>
+                <li>Terceira Lei de Newton: Lei de Ação e Reação.</li>
+            </ol>
+            <p>
+                Estas leis são essenciais para compreender o comportamento dos objetos em movimento e são amplamente aplicadas na física.
+            </p>
+        </section>
+        <!-- Seção de Exercícios -->
+        <section id="exercises">
+            <h2>Exercícios</h2>
+            <ol>
+                <li>
+                    <p>Qual é o nome da Primeira Lei de Newton?</p>
+                    <label>
+                        <input type="radio" name="q1" value="a"> Lei da Gravidade
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="b"> Lei da Inércia
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="c"> Lei da Ação e Reação
+                    </label>
+                </li>
+                <li>
+                    <p>Qual é a unidade de medida da força de acordo com a Segunda Lei de Newton?</p>
+                    <label>
+                        <input type="radio" name="q2" value="a"> Watt
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="b"> Pascal
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="c"> Newton
+                    </label>
+                </li>
+                <li>
+                    <p>De acordo com a Terceira Lei de Newton, como as ações e reações se relacionam?</p>
+                    <label>
+                        <input type="radio" name="q3" value="a"> Têm a mesma magnitude e direção, mas sentidos opostos.
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="b"> Têm magnitudes e direções diferentes.
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="c"> Não têm relação entre si.
+                    </label>
+                </li>
+            </ol>
+            <button id="submit-button">Verificar Respostas</button>
+            <div id="results"></div>
+        </section>
+    </main>
+    <script src="main.js"></script>
 </body>
 </html>
