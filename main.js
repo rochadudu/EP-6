@@ -23,4 +23,5 @@ function evaluateAnswers() {
     }
 
     results.textContent = `Você acertou ${score} de 3 questões.`;
+    
 }
