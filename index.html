@@ -3,76 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leis de Newton</title>
     <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
-<body>
-    <header>
-        <h1>Leis de Newton</h1>
-        <p>Conhecimento Fundamental</p>
-        <button class="meu-botao"><a href="index2.html">Explicação</a></button>
-    </header>
-    <main>
-        <!-- Seção de Explicação -->
-        <section id="explanation">
-            <h2>Explicação das Leis de Newton</h2>
-            <p>
-                As Leis de Newton são três princípios fundamentais que descrevem o movimento de objetos. Elas são:
-            </p>
-            <ol>
-                <li>Primeira Lei de Newton: Também chamada de Lei da Inércia.</li>
-                <li>Segunda Lei de Newton: Relaciona força, massa e aceleração.</li>
-                <li>Terceira Lei de Newton: Lei de Ação e Reação.</li>
-            </ol>
-            <p>
-                Estas leis são essenciais para compreender o comportamento dos objetos em movimento e são amplamente aplicadas na física.
-            </p>
-        </section>
-        <!-- Seção de Exercícios -->
-        <section id="exercises">
-            <h2>Exercícios</h2>
-            <ol>
-                <li>
-                    <p>Qual é o nome da Primeira Lei de Newton?</p>
-                    <label>
-                        <input type="radio" name="q1" value="a"> Lei da Gravidade
-                    </label>
-                    <label>
-                        <input type="radio" name="q1" value="b"> Lei da Inércia
-                    </label>
-                    <label>
-                        <input type="radio" name="q1" value="c"> Lei da Ação e Reação
-                    </label>
-                </li>
-                <li>
-                    <p>Qual é a unidade de medida da força de acordo com a Segunda Lei de Newton?</p>
-                    <label>
-                        <input type="radio" name="q2" value="a"> Watt
-                    </label>
-                    <label>
-                        <input type="radio" name="q2" value="b"> Pascal
-                    </label>
-                    <label>
-                        <input type="radio" name="q2" value="c"> Newton
-                    </label>
-                </li>
-                <li>
-                    <p>De acordo com a Terceira Lei de Newton, como as ações e reações se relacionam?</p>
-                    <label>
-                        <input type="radio" name="q3" value="a"> Têm a mesma magnitude e direção, mas sentidos opostos.
-                    </label>
-                    <label>
-                        <input type="radio" name="q3" value="b"> Têm magnitudes e direções diferentes.
-                    </label>
-                    <label>
-                        <input type="radio" name="q3" value="c"> Não têm relação entre si.
-                    </label>
-                </li>
-            </ol>
-            <button id="submit-button">Verificar Respostas</button>
-            <div id="results"></div>
-        </section>
-    </main>
-    <script src="main.js"></script>
+<body onload="inclui_nome()">
+
+    <script src="script.js"></script>
+
+    <p id="marcacao_nome"></p>
+
+    <form>
+        <h3>Questão 1</h3>
+        <input type="radio" name="quest_1" value="correta">Resposta 1 <br>
+        <input type="radio" name="quest_1" value="errada">Resposta 1 <br>
+        <input type="radio" name="quest_1" value="errada">Resposta 1 <br>
+        <input type="radio" name="quest_1" value="errada">Resposta 1 <br>
+        <p id="resp_correta_1" class="verde"></p><p id="resp_errada_1" class="vermelho"></p><br>
+
+        <h3>Questão 2</h3>
+        <input type="radio" name="quest_2" value="correta">Resposta 1 <br>
+        <input type="radio" name="quest_2" value="errada">Resposta 1 <br>
+        <input type="radio" name="quest_2" value="errada">Resposta 1 <br>
+        <input type="radio" name="quest_2" value="errada">Resposta 1 <br>
+        <p id="resp_correta_2" class="verde"></p><p id="resp_errada_2" class="vermelho"></p>
+
+        <h3>Questão 3</h3>
+        <input type="radio" name="quest_3" value="correta">Resposta 1 <br>
+        <input type="radio" name="quest_3" value="errada">Resposta 1 <br>
+        <input type="radio" name="quest_3" value="errada">Resposta 1 <br>
+        <input type="radio" name="quest_3" value="errada">Resposta 1 <br>
+        <p id="resp_correta_3" class="verde"></p><p id="resp_errada_3" class="vermelho"></p><br>
+
+        <h3>Questão 4</h3>
+        <input type="radio" name="quest_4" value="correta">Resposta 1 <br>
+        <input type="radio" name="quest_4" value="errada">Resposta 1 <br>
+        <input type="radio" name="quest_4" value="errada">Resposta 1 <br>
+        <input type="radio" name="quest_4" value="errada">Resposta 1 <br>
+        <p id="resp_correta_4" class="verde"></p><p id="resp_errada_4" class="vermelho"></p>
+
+        <p id="quantos_acertos"></p>
+            <button type="button" onclick="funcao_resposta()">Responder</button>
+    </form>
+    
 </body>
 </html>
