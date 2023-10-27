@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007BFF;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    line-height: 1.6;
+}
+
+
+textarea {
+    width: 50%;
+    justify-content: center;
+}
+
+button{
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+.botao {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #007BFF;
+}
+
+.meu-botao {
+    background-color: #fbfbfb;
+    color: rgb(0, 0, 0);
+    border: none; /* Remove a borda padrão do botão */
+    padding: 5px 10px; /* Define o tamanho de dentro */
+    text-align: center; /* Alinha do texto */
+    text-decoration: none; /* Remove a linha de baixo do texto */
+    display: inline-block; 
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 4px 2px; /* Margem externa */
+    cursor: pointer; /* Transforma o cursor em uma mãozinha ao passar o mouse */
+    border-radius: 5px; /* Borda redonda */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.605);
+  }
+
+.container{
+    margin: 20px;
+    padding: 20px;
+}
+
+.verde{
+    color: green;
+}
+.vermelho{
+    color: red;
+}
