@@ -1,176 +1,110 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leis de Newton</title>
     <link rel="stylesheet" href="style.css">
+    <title>Leis de Newton</title>
 </head>
-<body>
-    <header>
-        <img src="leis.webp" alt="">
-        <h1>Leis de Newton</h1>
-        <h2>Conhecimento Fundamental</h2>
-        <button class="meu-botao"><a href="index2.html">Explicação</a></button>
-    </header>
-    <main>
-        
-        <!-- Seção de Exercícios -->
-        <li>
-            <h3>Qual das seguintes opções é o nome da Primeira Lei de Newton?</h3>
-            <label>
-                <input type="radio" name="q1" value="a"> Lei da Gravidade
-            </label><br>
-            <label>
-                <input type="radio" name="q1" value="b"> Lei da Inércia
-            </label><br>
-            <label>
-                <input type="radio" name="q1" value="c"> Lei da Ação e Reação
-            </label>
-        </li>
-        
-        <li>
-            <h3>A Segunda Lei de Newton relaciona qual grandeza física com a força aplicada a um objeto?</h3>
-            <label>
-                <input type="radio" name="q2" value="a"> Velocidade
-            </label><br>
-            <label>
-                <input type="radio" name="q2" value="b"> Massa
-            </label><br>
-            <label>
-                <input type="radio" name="q2" value="c"> Aceleração
-            </label>
-        </li>
-        
-        <li>
-            <h3>De acordo com a Terceira Lei de Newton, como as ações e reações se relacionam?</h3>
-            <label>
-                <input type="radio" name="q3" value="a">  Têm a mesma magnitude e direção, mas sentidos opostos.
-            </label><br>
-            <label>
-                <input type="radio" name="q3" value="b">  Têm magnitudes e direções diferentes.
-            </label><br>
-            <label>
-                <input type="radio" name="q3" value="c"> Não têm relação entre si.
 
+<header>
+    <h1>As Três Leis de Newton</h1><br>
+    <p>Conhecimento Fundamental</p><br>
+    <button class="meu-botao"><a href="index2.html">Explicação</a></button>
+</header>
+<div class="container">
+    <p id="marcacao_nome"></p>
 
-            </label>
-        </li>
-        
-        <li>
-            <h3>QQual é a unidade de medida da força no Sistema Internacional de Unidades (SI)?</h3>
-            <label>
-                <input type="radio" name="q4" value="a">  Watt
-            </label><br>
-            <label>
-                <input type="radio" name="q4" value="b"> Pascal
-            </label><br>
-            <label>
-                <input type="radio" name="q4" value="c"> Newton
-            </label>
-        </li>
-        
-        <li>
-            <h3>Qual das Leis de Newton está relacionada à famosa fórmula F = m * a?</h3>
-            <label>
-                <input type="radio" name="q5" value="a">  Primeira Lei de Newton
-            </label><br>
-            <label>
-                <input type="radio" name="q5" value="b"> Segunda Lei de Newton
-            </label><br>
-            <label>
-                <input type="radio" name="q5" value="c">  Terceira Lei de Newton
-            </label>
-        </li>
-        
-        <li>
-            <h3>De acordo com a Primeira Lei de Newton, o que acontece a um objeto em repouso se nenhuma força externa atuar sobre ele?</h3>
-            <label>
-                <input type="radio" name="q6" value="a">  Ele permanece em repouso.
-            </label><br>
-            <label>
-                <input type="radio" name="q6" value="b"> Ele acelera.
-            </label><br>
-            <label>
-                <input type="radio" name="q6" value="c">  Ele cai
-            </label>
-        </li>
-        
-        <li>
-            <h3>A Primeira Lei de Newton é frequentemente chamada de "Lei da Inércia". O que significa "inércia"?</h3>
-            <label>
-                <input type="radio" name="q7" value="a"> Tendência de um objeto em repouso a permanecer em repouso.
-            </label><br>
-            <label>
-                <input type="radio" name="q7" value="b"> Tendência de um objeto em movimento a permanecer em movimento.
-            </label><br>
-            <label>
-                <input type="radio" name="q7" value="c"> Tendência de um objeto a flutuar.
+    <form>
+        <h3>1). Qual é a primeira lei de Newton?</h3><br>
+        <input type="radio" name="quest_1" value="correta">Lei da inércia <br><br>
+        <input type="radio" name="quest_1" value="errada"> Lei da ação e reação <br><br>
+        <input type="radio" name="quest_1" value="errada">Lei da aceleração <br><br>
+        <p id="resp_correta_1" class="verde"></p><p id="resp_errada_1" class="vermelho"></p><br>
 
+        <h3>2). A segunda lei de Newton relaciona:</h3><br>
+        <input type="radio" name="quest_2" value="correta">Força, massa e aceleração <br><br>
+        <input type="radio" name="quest_2" value="errada">Força e distância percorrida <br><br>
+        <input type="radio" name="quest_2" value="errada">Força e velocidade <br><br>
+        <p id="resp_correta_2" class="verde"></p><p id="resp_errada_2" class="vermelho"></p>
 
-            </label>
-        </li>
-        
-        <li>
-            <h3>Qual é o nome do cientista que formulou as Leis de Newton?</h3>
-            <label>
-                <input type="radio" name="q8" value="a"> Albert Einstein
-            </label><br>
-            <label>
-                <input type="radio" name="q8" value="b"> Isaac Newton
-            </label><br>
-            <label>
-                <input type="radio" name="q8" value="c">  Galileo Galilei
-            </label>
-        </li>
-        
-        <li>
-            <h3>Quem foi o primeiro homem a pisar na Lua?</h3>
-            <label>
-                <input type="radio" name="q9" value="a"> Neil Armstrong
-            </label><br>
-            <label>
-                <input type="radio" name="q9" value="b"> Yuri Gagarin
-            </label><br>
-            <label>
-                <input type="radio" name="q9" value="c"> Buzz Aldrin
-            </label>
-        </li>
-        
-        <li>
-            <h3>Se você empurrar uma caixa de 10 kg com uma força de 20 N, qual será a aceleração da caixa de acordo com a Segunda Lei de Newton?</h3>
-            <label>
-                <input type="radio" name="q10" value="a"> 2 m/s²
-            </label><br>
-            <label>
-                <input type="radio" name="q10" value="b"> 10 m/s²
-            </label><br>
-            <label>
-                <input type="radio" name="q10" value="c">  0.5 m/s²
-            </label>
-        </li>
+        <h3>3). Qual das seguintes não é uma lei de Newton?</h3><br>
+        <input type="radio" name="quest_3" value="correta"> Lei da gravidade <br><br>
+        <input type="radio" name="quest_3" value="errada"> Lei da ação e reação <br><br>
+        <input type="radio" name="quest_3" value="errada">Lei da inércia <br><br>
+        <p id="resp_correta_3" class="verde"></p><p id="resp_errada_3" class="vermelho"></p><br>
 
-        
-<li>
-    <h3>De acordo com a Terceira Lei de Newton, se você empurrar uma parede com uma certa força, qual é a ação e qual é a reação?</h3>
-    <textarea name="q11" rows="4" cols="50" placeholder="Digite sua resposta aqui"></textarea>
-</li>
+        <h3>4). De acordo com a terceira lei de Newton, se você <br>
+            empurrar um objeto para a direita, o objeto exerce uma força igual e oposta para a:</h3><br>
+        <input type="radio" name="quest_4" value="correta">Esquerda <br><br>
+        <input type="radio" name="quest_4" value="errada">Direita <br><br>
+        <input type="radio" name="quest_4" value="errada">Cima <br><br>
+        <p id="resp_correta_4" class="verde"></p><p id="resp_errada_4" class="vermelho"></p>
 
-<li>
-    <h3>Qual é o nome da Terceira Lei de Newton?</h3>
-    <textarea name="q12" rows="4" cols="50" placeholder="Digite sua resposta aqui"></textarea>
-</li>
+        <h3>5). A unidade de medida da força no sistema internacional (SI) é:</h3><br>
+        <input type="radio" name="quest_5" value="correta">Newton (N) <br><br>
+        <input type="radio" name="quest_5" value="errada">Watt (W) <br><br>
+        <input type="radio" name="quest_5" value="errada"> Joule (J) <br><br>
+        <p id="resp_correta_5" class="verde"></p><p id="resp_errada_5" class="vermelho"></p>
 
-<li>
-    <h3>E Qual das seguintes afirmações sobre a Primeira Lei de Newton está correta?</h3>
-    <textarea name="q13" rows="4" cols="50" placeholder="Digite sua resposta aqui"></textarea>
-</li>
+        <h3>6). Qual é a quantidade vetorial que descreve a <br>
+            rapidez e a direção do movimento de um </h3><br>
+        <input type="radio" name="quest_6" value="correta">Velocidade <br><br>
+        <input type="radio" name="quest_6" value="errada">Massa <br><br>
+        <input type="radio" name="quest_6" value="errada">Energia <br><br>
+        <p id="resp_correta_6" class="verde"></p><p id="resp_errada_6" class="vermelho"></p>
 
-        <button id="check-answers-button">Verificar Respostas</button>
-<div id="results-container"></div>
+        <h3>7). Qual lei de Newton descreve o princípio de que um <br>
+            objeto em repouso permanecerá em repouso e um objeto em movimento continuará em movimento?</h3><br>
+        <input type="radio" name="quest_7" value="correta">Primeira lei <br><br>
+        <input type="radio" name="quest_7" value="errada">Segunda lei <br><br>
+        <input type="radio" name="quest_7" value="errada">Terceira lei <br><br>
+        <p id="resp_correta_7" class="verde"></p><p id="resp_errada_7" class="vermelho"></p>
 
+        <h3>8). Qual lei de Newton é frequentemente chamada de "lei da ação e reação"?</h3><br>
+        <input type="radio" name="quest_8" value="correta">Terceira lei <br><br>
+        <input type="radio" name="quest_8" value="errada"> Primeira lei <br><br>
+        <input type="radio" name="quest_8" value="errada">Segunda lei <br><br>
+        <p id="resp_correta_8" class="verde"></p><p id="resp_errada_8" class="vermelho"></p>
 
+        <h3>9). Quando você empurra uma caixa sobre o chão, que tipo de força está agindo?</h3><br>
+        <input type="radio" name="quest_9" value="correta">Força de atrito<br><br>
+        <input type="radio" name="quest_9" value="errada"> Força gravitacional<br><br>
+        <input type="radio" name="quest_9" value="errada">Força eletromagnética<br><br>
+        <p id="resp_correta_9" class="verde"></p><p id="resp_errada_9" class="vermelho"></p>
+
+        <h3>10). Qual das seguintes grandezas é uma quantidade escalar?</h3><br>
+        <input type="radio" name="quest_10" value="correta">Massa <br><br>
+        <input type="radio" name="quest_10" value="errada">Velocidade <br><br>
+        <input type="radio" name="quest_10" value="errada">Força <br><br>
+        <p id="resp_correta_10" class="verde"></p><p id="resp_errada_10" class="vermelho"></p>
+
+        <p id="quantos_acertos"></p>
+            <button  type="button" onclick="funcao_resposta()">Responder</button>
+    </form>
+   
+        <section>
+            <h2>Perguntas Descritivas</h2>
+            <form id="descritiva">
+                <ol>
+                    <li>
+                        <p>Explique a terceira lei de Newton.</p>
+                        <textarea name="q11" rows="4" cols="50"></textarea>
+                    </li>
+                    <li>
+                        <p>Descreva a primeira lei de Newton em suas próprias palavras.</p>
+                        <textarea name="q12" rows="4" cols="50"></textarea>
+                    </li>
+                    <li>
+                        <p>O que acontece quando duas forças de igual magnitude, mas em direções opostas, atuam sobre um objeto?</p>
+                        <textarea name="q13" rows="4" cols="50"></textarea>
+                    </li>
+                </ol>
+                <button class="botao">Enviar</button>
+            </form>
+        </section>
+    </div>
     </main>
-    <script src="main.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
