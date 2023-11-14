@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-areas: 
+        "cab cab cab"
+        "brac pri pri"
+        "brac pri pri"
+        "rod rod rod";
+    grid-gap: 0;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    background-color: rgb(236, 236, 236);
+}
+
+header{
+    grid-area: cab;
+}
+
+aside{
+    grid-area: brac;
+}
+main{
+    grid-area: pri;
+}
+footer{
+    grid-area: rod;
+}
+
+header{
+    background-color: #202020;
+    color: antiquewhite;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    height: 150px;
+    box-shadow: 0 3px 0 aqua;
+}
+
+.footer {
+    background-color: #202020;
+    color: #fff;
+    padding: 50px 0;
+    height: 195px;
+    
+    box-shadow: 3px 0 0 aqua;
+}
+
+.algo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.coluna {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.fa {
+    font-size: 24px;
+    color: #fff;
+}
+
+
+
+h1 {
+    text-align: center;
+}
+
+.card-container {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    width: 400px; /* Largura do card */
+    border: 1px solid #ccc; /* Borda do card */
+    border-radius: 8px; /* Borda arredondada */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra do card */
+    overflow: hidden; /* Impede que a imagem se estenda além do card */
+    margin-right: 20px; /* Espaçamento à direita para separar os cards */
+    box-shadow: 0 0 10px #212529a2;
+    background-color: #202020;
+    color: #fff;
+    cursor: pointer; /* Transforma o cursor em uma mãozinha ao passar o mouse */
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card img {
+    width: 400px; /* A imagem terá a mesma largura que o card */
+    max-width: 400px; /* Garante que a imagem não seja maior que o card */
+    height: auto; /* Mantém a proporção original da imagem */
+}
+
+.card h2 {
+    margin: 10px ;
+}
+
+.card p {
+    color: #666;
+    margin: 10px ;
+}
+
+.a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.botao1{
+    background: -webkit-linear-gradient(left,#283959,#091026);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    
+}
+
+
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+ }
+
+.centered {
+    text-align: center;
+  }
+
+header img{
+    width: 70px;
+    margin: 17px;
+}
+
+nav.menu-lateral{
+    width: 80px;
+    height: 100%;
+    background-color: #202020;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 aqua;
+    overflow: hidden;
+    transition: .4s;
+}
+
+nav.menu-lateral.expandir{
+    width: 300px;
+}
+
+.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-expandir > i{
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 70px;
+    transition: .5s;
+    opacity: 0;
+}
+
+nav.menu-lateral.expandir .txt-link{
+    margin-left: 40px;
+    opacity: 1;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+ul li.item-menu:hover{
+    background-color: aqua;
+
+}
+
+ul li.item-menu{
+    transition: 1s;
+}
+
+ul li.ativo{
+    background-color: aqua;
+}

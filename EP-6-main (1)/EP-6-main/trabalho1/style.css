@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-areas: 
+        "brac cab cab"
+        "brac pri pri"
+        "rod rod rod";
+    grid-gap: 0;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    background-color: rgb(236, 236, 236);
+}
+
+header{
+    grid-area: cab;
+}
+
+aside{
+    grid-area: brac;
+}
+main{
+    grid-area: pri;
+}
+footer{
+    grid-area: rod;
+}
+header{
+    background-color: #202020;
+    color: antiquewhite;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 1349px;
+    box-shadow: 0 3px 0 aqua;
+}
+
+
+header h1 {
+    text-align: center;
+    margin: 100px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 20;
+    margin: 0;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    text-decoration: underline aqua;
+}
+
+p {
+    line-height: 1.6;
+}
+
+
+textarea {
+    width: 50%;
+    justify-content: center;
+}
+
+button{
+    background-color: #202020;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+.botao {
+    background-color: #202020;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.botao1{
+    background-color: #202020;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.botao1:hover{
+    background-color: #ff0000;
+   
+}
+
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+ }
+ 
+
+button:hover {
+    background-color: #007BFF;
+}
+
+.meu-botao {
+    background-color: #ff0000;
+    border: none; /* Remove a borda padrão do botão */
+    padding: 5px 10px; /* Define o tamanho de dentro */
+    text-align: center; /* Alinha do texto */
+    text-decoration: none; /* Remove a linha de baixo do texto */
+    display: inline-block; 
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 4px 2px; /* Margem externa */
+    cursor: pointer; /* Transforma o cursor em uma mãozinha ao passar o mouse */
+    border-radius: 5px; /* Borda redonda */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.605);
+    margin-left: auto;
+  }
+
+.container{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.verde{
+    color: green;
+}
+.vermelho{
+    color: red;
+}
+
+
+#calculadora {
+    text-align: center;
+  }
+
+  input {
+    padding: 10px;
+    margin: 5px;
+  }
+
+  button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+  }

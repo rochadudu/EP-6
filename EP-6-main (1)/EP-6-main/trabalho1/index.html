@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Leis de Newton</title>
+</head>
+
+<header>
+    <h1>As Três Leis de Newton</h1><br>
+
+    <button class="meu-botao"><a href="index2.html">Explicação</a></button>
+</header>
+
+<main>
+<div class="container">
+    <h2 id="marcacao_nome"></h2><br>
+    <body onload="inclui_nome()">
+    <form>
+        <h3> 1). Qual é a primeira lei de Newton?</h3><br>
+        <input type="radio" name="quest_1" value="correta"> Lei da inércia <br><br>
+        <input type="radio" name="quest_1" value="errada"> Lei da ação e reação <br><br>
+        <input type="radio" name="quest_1" value="errada"> Lei da aceleração <br><br>
+        <p id="resp_correta_1" class="verde"></p><p id="resp_errada_1" class="vermelho"></p><br>
+
+        <h3>2). A segunda lei de Newton relaciona:</h3><br>
+        <input type="radio" name="quest_2" value="correta"> Força, massa e aceleração <br><br>
+        <input type="radio" name="quest_2" value="errada"> Força e distância percorrida <br><br>
+        <input type="radio" name="quest_2" value="errada"> Força e velocidade <br><br>
+        <p id="resp_correta_2" class="verde"></p><p id="resp_errada_2" class="vermelho"></p>
+
+        <h3>3). Qual das seguintes não é uma lei de Newton?</h3><br>
+        <input type="radio" name="quest_3" value="correta"> Lei da gravidade <br><br>
+        <input type="radio" name="quest_3" value="errada"> Lei da ação e reação <br><br>
+        <input type="radio" name="quest_3" value="errada"> Lei da inércia <br><br>
+        <p id="resp_correta_3" class="verde"></p><p id="resp_errada_3" class="vermelho"></p><br>
+
+        <h3>4). De acordo com a terceira lei de Newton, se você <br>
+            empurrar um objeto para a direita, o objeto exerce uma força igual e oposta para a:</h3><br>
+        <input type="radio" name="quest_4" value="correta"> Esquerda <br><br>
+        <input type="radio" name="quest_4" value="errada"> Direita <br><br>
+        <input type="radio" name="quest_4" value="errada"> Cima <br><br>
+        <p id="resp_correta_4" class="verde"></p><p id="resp_errada_4" class="vermelho"></p>
+
+        <h3>5). A unidade de medida da força no sistema internacional (SI) é:</h3><br>
+        <input type="radio" name="quest_5" value="correta"> Newton (N) <br><br>
+        <input type="radio" name="quest_5" value="errada"> Watt (W) <br><br>
+        <input type="radio" name="quest_5" value="errada"> Joule (J) <br><br>
+        <p id="resp_correta_5" class="verde"></p><p id="resp_errada_5" class="vermelho"></p>
+
+        <h3>6). Qual é a quantidade vetorial que descreve a <br>
+            rapidez e a direção do movimento de um </h3><br>
+        <input type="radio" name="quest_6" value="correta"> Velocidade <br><br>
+        <input type="radio" name="quest_6" value="errada"> Massa <br><br>
+        <input type="radio" name="quest_6" value="errada"> Energia <br><br>
+        <p id="resp_correta_6" class="verde"></p><p id="resp_errada_6" class="vermelho"></p>
+
+        <h3>7). Qual lei de Newton descreve o princípio de que um <br>
+            objeto em repouso permanecerá em repouso e um objeto em movimento continuará em movimento?</h3><br>
+        <input type="radio" name="quest_7" value="correta"> Primeira lei <br><br>
+        <input type="radio" name="quest_7" value="errada"> Segunda lei <br><br>
+        <input type="radio" name="quest_7" value="errada"> Terceira lei <br><br>
+        <p id="resp_correta_7" class="verde"></p><p id="resp_errada_7" class="vermelho"></p>
+
+        <h3>8). Qual lei de Newton é frequentemente chamada de "lei da ação e reação"?</h3><br>
+        <input type="radio" name="quest_8" value="correta"> Terceira lei <br><br>
+        <input type="radio" name="quest_8" value="errada"> Primeira lei <br><br>
+        <input type="radio" name="quest_8" value="errada"> Segunda lei <br><br>
+        <p id="resp_correta_8" class="verde"></p><p id="resp_errada_8" class="vermelho"></p>
+
+        <h3>9). Quando você empurra uma caixa sobre o chão, que tipo de força está agindo?</h3><br>
+        <input type="radio" name="quest_9" value="correta"> Força de atrito<br><br>
+        <input type="radio" name="quest_9" value="errada"> Força gravitacional<br><br>
+        <input type="radio" name="quest_9" value="errada"> Força eletromagnética<br><br>
+        <p id="resp_correta_9" class="verde"></p><p id="resp_errada_9" class="vermelho"></p>
+
+        <h3>10). Qual das seguintes grandezas é uma quantidade escalar?</h3><br>
+        <input type="radio" name="quest_10" value="correta"> Massa <br><br>
+        <input type="radio" name="quest_10" value="errada"> Velocidade <br><br>
+        <input type="radio" name="quest_10" value="errada"> Força <br><br>
+        <p id="resp_correta_10" class="verde"></p><p id="resp_errada_10" class="vermelho"></p>
+
+        <p id="quantos_acertos"></p>
+            <button  type="button" onclick="funcao_resposta()">Responder</button><br><br>
+            <button class="botao1"><a href="https://chat.openai.com/auth/login">Questões</a></button>
+    </form>
+                    <h1>Calculadora</h1>
+    <div id="calculadora">
+        <label for="mass">Massa (kg): </label>
+        <input type="number" id="mass" placeholder="Informe a massa">
+    
+        <br>
+    
+        <label for="acceleration">Aceleração: </label>
+        <input type="number" id="acceleration" placeholder="Informe a aceleração">
+    
+        <br>
+    
+        <button onclick="calculateForce()">Calcular Força</button>
+    
+        <br>
+    
+        <p id="resultado"></p>
+      </div>
+
+</main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
